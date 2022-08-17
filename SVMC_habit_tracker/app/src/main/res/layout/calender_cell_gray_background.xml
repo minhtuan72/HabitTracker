@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray"
+    android:layout_marginHorizontal="2dp"
+    android:layout_marginVertical="2dp">
+
+
+    <ProgressBar
+        android:id="@+id/ir_progressbar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:indeterminateOnly="false"
+        android:progressDrawable="@drawable/custom_progessbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/cellDayText"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:text="18"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/ir_progressbar"
+        app:layout_constraintEnd_toEndOf="@+id/ir_progressbar"
+        app:layout_constraintStart_toStartOf="@+id/ir_progressbar"
+        app:layout_constraintTop_toTopOf="@+id/ir_progressbar"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

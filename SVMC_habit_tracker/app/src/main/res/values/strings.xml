@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SVMC_habit_tracker</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="main_navi">
+        <item>home</item>
+        <item>habit</item>
+        <item>statistic</item>
+    </string-array>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="back"><![CDATA[<]]></string>
+    <string name="forward"><![CDATA[>]]></string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

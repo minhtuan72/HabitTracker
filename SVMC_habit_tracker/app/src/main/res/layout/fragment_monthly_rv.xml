@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:id="@+id/monthly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/frMonthBtn_prev"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_btn_background"
+            android:textSize="15sp"
+            android:layout_marginLeft="80dp"
+            android:text="@string/back"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/frMonthTv_monthYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/custom_shadow"
+            android:text="Feb 2021"
+            android:fontFamily="cursive"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"  />
+
+
+        <Button
+            android:id="@+id/frMonthBtn_next"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/custom_btn_background"
+            android:textSize="15sp"
+            android:layout_marginRight="80dp"
+            android:text="@string/forward"
+            android:textStyle="bold"  />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/frMonthRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/monthly"
+        android:layout_marginTop="20dp"
+        android:columnWidth="90dp"
+        android:horizontalSpacing="20dp"
+        android:numColumns="2"
+        android:verticalSpacing="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monthly" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
